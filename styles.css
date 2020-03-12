@@ -1,0 +1,90 @@
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.coral {
+    background-color: lightcoral;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    animation: coral-box 4s linear 1s 1 normal forwards;
+}
+
+.coral:hover {
+    border: 2px solid white;
+}
+
+
+.blue {
+    background-color: lightblue;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+    animation: blue-box 4s linear 1s 1 normal forwards;
+}
+
+.blue:hover {
+    border: 2px solid white;
+}
+
+.green {
+    background-color: lightgreen;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    animation: green-box 4s linear 1s 1 normal forwards;
+}
+
+.green:hover {
+    border: 2px solid white;
+}
+
+.yellow {
+    background-color: lightgoldenrodyellow;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    animation: yellow-box 4s linear 1s 1 normal forwards;
+}
+
+.yellow:hover {
+    border: 2px solid white;
+}
+
+@keyframes coral-box{
+    100% {
+        left: 50%;
+        top: 50%;
+        background-color: black;
+        border-radius: 0% 0% 100% 0%;
+    }
+}
+
+@keyframes blue-box{
+    100% {
+        right: 50%;
+        top: 50%;
+        background-color: black;
+        border-radius: 0% 0% 0% 100%;
+    }
+}
+
+@keyframes green-box{
+    100% {
+        left: 50%;
+        bottom: 50%;
+        background-color: black;
+        border-radius: 0% 100% 0% 0%;
+    }
+}
+
+@keyframes yellow-box{
+    100% {
+        right: 50%;
+        bottom: 50%;
+        background-color: black;
+        border-radius: 100% 0% 0% 0%;
+    }
+}
